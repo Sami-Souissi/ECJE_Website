@@ -1,0 +1,49 @@
+<html>
+<title>Player</title>
+<head>
+    <style>
+        .fullscreen-video {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            z-index: 9999;
+        }
+    </style>
+</head>
+
+<body>
+    <video class="fullscreen-video" id="videoElement"    loop controls>
+        <source src="" id="videoSource">
+    </video>
+    <script>
+        const videoElement = document.getElementById("videoElement");
+        const videoSource = document.getElementById("videoSource");
+        const userAgent =
+            navigator.userAgent.toLowerCase();
+        if (userAgent.includes("mobile") || userAgent.includes("android")) {
+            videoSource.src = "./story01.mp4";
+            
+
+        } else {
+            videoSource.src = "./hstory.mp4";
+            
+        }
+        videoElement.load();
+            
+            document.addEventListener("keydown", function(event) {
+        if (event.code === "F11") {
+          videoElement.requestFullscreen();
+        }
+      });
+      videoElement.play();
+        
+
+
+    </script>
+
+</body>
+
+</html>
