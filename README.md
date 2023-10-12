@@ -28,7 +28,7 @@ ECJE (Enetcom Junior Entreprise) is a non-profit digital service-based organizat
 
 ## Live Demo
 
-🌐 Explore the live demo of the ECJE Website: [**Live Demo**](https://your-live-demo-url-here)
+🌐 Explore the live demo of the ECJE Website: [**Live Demo**](https://sami-souissi.github.io/ECJE_Website/)
 
 Feel free to interact with the website and experience its features in action.
 
